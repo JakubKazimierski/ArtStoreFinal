@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Art-Store";
+}
+
+    <div class="text-center">
+        <h1 class="display-4" style="color:seagreen">Welcome</h1>
+
+        <hr />
+ 
+        <!--przejscie do podstrony ze wszystkimi obrazami  (nazwa linku), (Nazwa funkcji operujacej), (nazwa Klasy kontrolera)-->
+        <h3 >@Html.ActionLink("Paintings still available", "Paintings", "Home")</h3>
+        
+        <hr />
+        <hr />
+        <!--przejscie do podstrony ze wszystkimi obrazami  (nazwa linku), (Nazwa funkcji operujacej), (nazwa Klasy kontrolera)-->
+        <h3>@Html.ActionLink("Sold paintings models", "Sold", "Home")</h3>
+
+        <hr />
+        <hr />
+        <!--przejscie do podstrony ze wszystkimi obrazami  (nazwa linku), (Nazwa funkcji operujacej), (nazwa Klasy kontrolera)-->
+         
+        <h3>@Html.ActionLink("About the author", "Author", "Home")</h3>
+
+        <hr />
+    </div>

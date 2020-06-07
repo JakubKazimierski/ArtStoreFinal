@@ -1,0 +1,24 @@
+﻿@model List<PaintingsViewModel>
+@{
+    ViewData["Title"] = "Paintings";
+}
+
+ 
+
+ 
+    <h1 style="color:seagreen" align="center">Paintings</h1>
+    <!--div with item for sale-->
+    @foreach (var painting in Model)
+    {
+        <div align="center" >
+            <hr />
+            <h2>@painting.Title</h2>
+            <h4> <span style="color:blanchedalmond">Author:</span> @painting.Author</h4>
+            <h4><span style="color:blanchedalmond">Style:</span> @painting.Style</h4>
+            <h4><span style="color:blanchedalmond">Price:</span> @painting.Price zł</h4>
+            <img src="@Url.Content(painting.Photo)" alt="@painting.Title" width=60% height=40% />
+            <hr />
+
+        </div>
+    }
+ 
